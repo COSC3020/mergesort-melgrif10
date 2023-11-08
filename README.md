@@ -14,4 +14,6 @@ part of the array each recursive call considers.
 
 Analyse the time complexity of your implementation and give a $\Theta$ bound for
 its worst-case runtime. Add your answer, including your reasoning, to this
-markdown file.
+markdown file. 
+
+For the worst case scenario the original array has the greatest element at the begining and descends to the smallest element at the end. The outer loop of the mergeSort function increases the size of the subarrays by 2 each iteration, therfore it will iterate $log_2(n)$ times. The inner loop goes through the entire array once, therfore it will iterate n times. In the worst case scenario the merge function will have to compare each element in the array once. Using this information it can be deducted that the worst-case time complexity would be $O(nlog(n))$
